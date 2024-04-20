@@ -220,6 +220,11 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
   background-color: #000;
   color: #fff;
 }
+#content .content-list-place .item-place .item-body .item-button:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
 #content .content-list-place .item-image {
   vertical-align: middle; /*làm mất khoảng trống giữa các thẻ theo chiều dọc*/
   width: 240px;
