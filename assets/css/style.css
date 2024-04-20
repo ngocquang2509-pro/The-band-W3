@@ -1,0 +1,189 @@
+/*Reset CSS*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*Không phải tính toán kích thước*/
+}
+html {
+  font-family: sans-serif;
+}
+/*
+Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ tổng quan đến chi tiết
+1. Vị trí 
+2. Kích thước (width, height)
+3. Màu sắc 
+4. Kiểu dáng
+*/
+#main {
+}
+
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed; /*cho phép định vị 1 phần tử cố định*/
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#nav {
+  position: relative;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav > li > a {
+  text-transform: uppercase; /*Viết hoa các chữ cái*/
+}
+#nav li a {
+  padding-left: 24px;
+  padding-right: 24px;
+  text-decoration: none; /*Bỏ gạch chân thẻ a*/
+  color: #fff;
+  line-height: 46px; /*chiều cao thẻ */
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+}
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+#nav > li:hover > .subnav {
+  display: block;
+}
+#nav .subnav a {
+  color: #000;
+  padding-left: 12px;
+  padding-right: 16px;
+  display: block;
+  line-height: 38px;
+}
+#nav .subnav li {
+  list-style: none;
+}
+#nav .subnav li:hover {
+  background-color: #ccc;
+}
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /*bóng đổ */
+}
+#nav .nav-down {
+  font-size: 12px;
+}
+#nav .ti-search {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 0 24px;
+  line-height: 46px; /*có tác dụng căn giữa chiều cao*/
+}
+#nav .ti-search:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#slider {
+  margin-top: 46px;
+  padding-top: 50%; /*chia tỷ lệ chiều cao bằng 50% chiều rộng*/
+  background: url("../img/Chicago.jpg") top center/cover no-repeat;
+  text-align: center;
+}
+#slider .description {
+  padding: 32px 16px;
+  display: inline-block;
+}
+#slider .description .de-title {
+  padding: 10px 0;
+  font-size: 24px;
+  color: #fff;
+}
+#slider .description .de-paragrap {
+  padding: 15px 0;
+  font-size: 15px;
+  color: #fff;
+}
+#content {
+}
+#content .content-section {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+}
+#content .content-description {
+  text-align: center;
+}
+#content .content-description .content-heading {
+  margin: 10px 0;
+  font-weight: 400; /*Độ rộng chữ*/
+  letter-spacing: 4px; /*Khoảng các các chữ*/
+}
+#content .content-description .content-slogan {
+  margin: 15px 0;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 15px;
+}
+#content .content-section .content-parap {
+  margin: 15px 0;
+  font-size: 15px;
+  text-align: justify; /*căn lề đoạn văn bằng nhau*/
+  line-height: 1.4;
+}
+#content .content-list-item {
+  padding: 32px 0;
+  overflow: hidden; /*chứa lại các item */
+}
+#content .content-list-item .content-item {
+  float: left; /*Đưa các item lên 1 dòng và lần lượt sang bên trái */
+  /*Nhưng khi sd float thì list-item sẽ không chưa các item được nữa nên phải dùng overflow: hidden ở list-item*/
+  width: calc(100% / 3);
+  text-align: center;
+}
+#content .content-list-item .content-item .item-name {
+  padding: 15px 0;
+}
+#content .content-list-item .content-item .item-img {
+  width: 154px;
+  height: 154px;
+
+  margin-bottom: 16px;
+}
+#content .content-Tour {
+  background-color: #000;
+  color: #fff;
+}
+#content .content-Tour .Tour-ticket {
+  list-style: none;
+  background-color: #fff;
+  color: black;
+}
+#content .content-Tour .Tour-ticket > li {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+  position: relative;
+}
+#content .content-Tour .Tour-ticket > li .month {
+  opacity: 0.6;
+}
+#content .content-Tour .Tour-ticket > li .status {
+  padding: 4px 8px;
+  margin: 0 16px;
+  background-color: red;
+  color: #fff;
+}
+#content .content-Tour .Tour-ticket > li .quantity {
+  position: absolute;
+  right: 31px;
+  padding: 3px 8px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+#content .content-Tour .Tour-ticket > li .status #footer {
+}

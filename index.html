@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/font/themify-icons/themify-icons.css"
+    />
+    <title>The Band</title>
+  </head>
+  <body>
+    <!-- thẻ div có display: block nên width sẽ bằng kích thước thẻ chứa nó
+         Những thẻ có thuộc tính inline thì đặt giá trị width, height sẽ không có tác dụng
+        thẻ li thì có display: list-item tương đương như block
+        -->
+    <div id="main">
+      <div id="header">
+        <ul id="nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Band</a></li>
+          <li><a href="">Tour</a></li>
+          <li><a href="">Contact</a></li>
+          <li>
+            <a href="#">
+              More
+              <i class="nav-down ti-angle-down"></i>
+            </a>
+            <ul class="subnav">
+              <li><a href="">Merchandise</a></li>
+              <li><a href="">Extras</a></li>
+              <li><a href="">Media</a></li>
+            </ul>
+          </li>
+          <div class="ti-search"></div>
+        </ul>
+      </div>
+      <div id="slider">
+        <div class="description">
+          <div class="de-title">Chicago</div>
+          <div class="de-paragrap">
+            Thank you, Chicago - A night we won't forget.
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <!-- about -->
+        <div class="content-section">
+          <div class="content-description">
+            <h2 class="content-heading">THE BAND</h2>
+            <p class="content-slogan">We love music</p>
+          </div>
+          <p class="content-parap">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <div class="content-list-item">
+            <div class="content-item">
+              <p class="item-name">Name</p>
+              <img src="./assets/img/bandmember.jpg" alt="" class="item-img" />
+            </div>
+            <div class="content-item">
+              <p class="item-name">Name</p>
+              <img src="./assets/img/bandmember.jpg" alt="" class="item-img" />
+            </div>
+            <div class="content-item">
+              <p class="item-name">Name</p>
+              <img src="./assets/img/bandmember.jpg" alt="" class="item-img" />
+            </div>
+          </div>
+        </div>
+        <!-- Tour -->
+        <div class="content-Tour">
+          <div class="content-section">
+            <div class="content-description">
+              <h2 class="content-heading">TOUR DATES</h2>
+              <p class="content-slogan">Remember to book your tickets!</p>
+            </div>
+            <br />
+            <ul class="Tour-ticket">
+              <li>
+                <span class="month">September</span>
+                <span class="status">Sold out</span>
+              </li>
+              <li>
+                <span class="month">October</span>
+                <span class="status">Sold out</span>
+              </li>
+              <li>
+                <span class="month">November</span>
+                <span class="quantity">3</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
