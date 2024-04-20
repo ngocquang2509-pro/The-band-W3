@@ -142,6 +142,8 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
   float: left; /*Đưa các item lên 1 dòng và lần lượt sang bên trái */
   /*Nhưng khi sd float thì list-item sẽ không chưa các item được nữa nên phải dùng overflow: hidden ở list-item*/
   width: calc(100% / 3);
+}
+#content .content-list-item .center {
   text-align: center;
 }
 #content .content-list-item .content-item .item-name {
@@ -185,5 +187,49 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
   color: #fff;
   border-radius: 50%;
 }
-#content .content-Tour .Tour-ticket > li .status #footer {
+#content .content-list-place {
+  overflow: hidden;
+  padding: 32px 8px;
+  margin: 0 -16px;
+}
+#content .content-list-place .item-place {
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 8px;
+}
+#content .content-list-place .item-place .item-body {
+  background-color: #fff;
+  color: #000;
+  padding: 0 16px;
+  position: relative;
+  padding-top: 15px;
+}
+#content .content-list-place .item-place .item-body .item-heading {
+  margin-bottom: 15px;
+}
+#content .content-list-place .item-place .item-body .item-pragrap {
+  margin-bottom: 15px;
+}
+#content .content-list-place .item-place .item-body .item-sub-heading {
+  margin-bottom: 15px;
+}
+#content .content-list-place .item-place .item-body .item-button {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+}
+#content .content-list-place .item-image {
+  vertical-align: middle; /*làm mất khoảng trống giữa các thẻ theo chiều dọc*/
+  width: 240px;
+  height: 180px;
+}
+#content .content-Tour .content-item-padding {
+}
+#content .content-margin {
+}
+#content .content-Tour .item-body {
+}
+#footer {
 }
