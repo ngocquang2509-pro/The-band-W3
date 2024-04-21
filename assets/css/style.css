@@ -6,6 +6,7 @@
 }
 html {
   font-family: sans-serif;
+  scroll-behavior: smooth; /*Thuộc tính css giúp hiệu ứng cuộn trang */
 }
 /*
 Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ tổng quan đến chi tiết
@@ -16,7 +17,7 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
 */
 #main {
 }
-
+/* header */
 #header {
   height: 46px;
   background-color: black;
@@ -86,6 +87,7 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
   background-color: red;
   cursor: pointer;
 }
+/* slider */
 #slider {
   margin-top: 46px;
   padding-top: 50%; /*chia tỷ lệ chiều cao bằng 50% chiều rộng*/
@@ -106,6 +108,7 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
   font-size: 15px;
   color: #fff;
 }
+/* content section */
 #content {
 }
 #content .content-section {
@@ -128,6 +131,7 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
   opacity: 0.6;
   font-size: 15px;
 }
+/* about */
 #content .content-section .content-parap {
   margin: 15px 0;
   font-size: 15px;
@@ -155,6 +159,7 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
 
   margin-bottom: 16px;
 }
+/* Tour */
 #content .content-Tour {
   background-color: #000;
   color: #fff;
@@ -230,11 +235,55 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
   width: 240px;
   height: 180px;
 }
-#content .content-Tour .content-item-padding {
+/* contact  */
+#content .content-section .contact-wrapp {
+  overflow: hidden;
 }
-#content .content-margin {
+#content .content-section .contact-wrapp .contact-icon > i {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: inline-block; /*Thẻ i có tính chất inline nên không padding, margin được*/
 }
-#content .content-Tour .item-body {
+#content .content-section .contact-wrapp .contact-infor > input {
+  padding: 8px;
+}
+
+#content .content-section .contact-wrapp .contact-infor input {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+#content .content-section .contact-wrapp .contact-infor .contact-infor-button {
+  float: right;
+  padding: 8px 16px;
+  margin: 16px 0;
+  background: #000;
+  color: #fff;
+}
+#content
+  .content-section
+  .contact-wrapp
+  .contact-infor
+  .contact-infor-button:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+#content .content-section .contact-wrapp .contact-icon,
+.contact-infor {
+  float: left;
+  width: 50%;
+}
+/*Map inmage*/
+#content .inmage-map {
+  opacity: 0.8;
+  width: 100%;
 }
 #footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .create-by {
+  margin: 15px 0;
+  opacity: 0.6;
 }
