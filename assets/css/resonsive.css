@@ -1,0 +1,59 @@
+/*PC*/
+@media (min-width: 1024px) {
+}
+/*tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+/*Mobile*/
+@media (max-width: 740px) {
+  #nav > li {
+    display: block;
+  }
+  #nav .ti-search {
+    display: none;
+  }
+  #nav .ti-menu:hover {
+    background-color: #ccc;
+    color: #000;
+  }
+  #nav .ti-menu {
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 24px;
+    line-height: 46px; /*có tác dụng căn giữa chiều cao*/
+  }
+  #slider {
+    padding-top: 7%;
+  }
+  #slider .description {
+    height: 156px;
+  }
+  #slider .description .de-title {
+    display: none;
+  }
+  #slider .description .de-paragrap {
+    display: none;
+  }
+  #content .content-list-item .content-item {
+    float: none;
+    width: 100%;
+  }
+  #content .content-list-item .content-item .item-img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 16px;
+  }
+  #content .content-list-place .item-place {
+    float: none;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  #content .content-list-place .item-image {
+    vertical-align: middle; /*làm mất khoảng trống giữa các thẻ theo chiều dọc*/
+    width: 100%;
+    height: 100%;
+  }
+}

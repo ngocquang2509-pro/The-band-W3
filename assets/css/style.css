@@ -26,6 +26,7 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
   right: 0;
   left: 0;
   z-index: 1;
+  overflow: hidden;
 }
 #nav {
   position: relative;
@@ -113,6 +114,8 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
 }
 #content .content-section {
   width: 800px;
+  max-width: 100%; /*tương thích trên các device khác*/
+  /*khi kích thước device < 800px thì mặc định trình duyệt sẽ giảm width sao cho bằng khích thước device*/
   margin-left: auto;
   margin-right: auto;
   padding: 64px 16px;
@@ -140,7 +143,7 @@ Nguyên tắc: làm từ ngoài vào trong, từ trên xuống dưới, từ t�
 }
 #content .content-list-item {
   padding: 32px 0;
-  overflow: hidden; /*chứa lại các item */
+  overflow: hidden; /*những phần tử con bị vượt quả cha thì ẩn đi  */
 }
 #content .content-list-item .content-item {
   float: left; /*Đưa các item lên 1 dòng và lần lượt sang bên trái */
